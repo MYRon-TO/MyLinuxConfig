@@ -112,6 +112,13 @@ map <LEADER><right> :vertical resize+5<CR>
 map <LEADER><down> :res +5<CR>
 map <LEADER><up> :res -5<CR>
 
+"set tab command
+map ct :tabe<CR>
+map <LEADER>H :-tabnext<CR>
+map <LEADER>L :+tabnext<CR>
+map <LEADER>J :-tabmove<CR>
+map <LEADER>K :+tabmove<CR>
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'connorholyday/vim-snazzy'
@@ -244,9 +251,6 @@ let g:mkdp_filetypes = ['markdown']
 let g:mkdp_theme = 'dark'
 
 
-
-
-
 "markdown control
 source ~/.vim/md_snippits.vim
 "vim-table-mode
@@ -254,6 +258,8 @@ map <LEADER>tm :TableModeToggle<CR>
 
 
 "set NerdTree
+"<Shift-i> to show hidden file
+map cnt :NERDTreeToggle<CR>
 
 "coc-nvim
     "coc-yank
