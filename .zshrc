@@ -94,7 +94,8 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-   export EDITOR=/usr/bin/vim
+export EDITOR=/usr/bin/vim
+export VISUAL=vim
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -117,6 +118,7 @@ source $ZSH/oh-my-zsh.sh
 alias s="screenfetch"
 alias cs="cowsay"
 alias csf="fortune | cowsay | lolcat -a"
+alias r="ranger"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
